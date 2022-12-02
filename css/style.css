@@ -11,7 +11,8 @@
 Configs Gerais 
 ----------------------------------------------------------*/
 body{
-	background:url(../img/background4.jfif); 
+	background-color: #000 !important;
+	background:url(../img/background.jpg); 
 	color:#868686; 
 	font-family: "Open Sans", Helvetica, sans-serif, arial; 
 	font-size: 18px; /* 18px a· 16px = 1.125em */
@@ -83,10 +84,10 @@ logotipo
 =========================
 */
 	header h1 a{
-		background:url(../img/logo-criar-site-responsivo.png) no-repeat ; 
+		background:url(../img/logo-pet-shop.png) no-repeat ; 
 		display:block;
 		float:left; 
-		height:139px;
+		height:145px;
 		text-indent:-9999; 
 		width:38.333%; /* 700px a 1200px = 0.58333333333333 x 100 = 58.333333333333%*/
 	}
@@ -129,6 +130,9 @@ nav{
 	text-align:center;
 	width:100%; /*1200px a 1200px = 1 x 100 = 100%*/
 }
+.trem{
+	color: #ffffff !important; 
+}
 	h2 span{
 		font-size: 1em; /* 60px a 60px = 1em */
 		font-weight: 300;
@@ -139,9 +143,13 @@ nav{
 		margin: 0 auto;
 		width:75%; /* 900px a 1200px = 0.75 x 100 = 75%*/
 	}
+/* foto da fachada
+.foto-fachada{
+	 border-radius: 15px 50px;
 
+} */
 .meio{
-	background-color:##363636;
+	background-color:#0ac3fe;
 	height: 437px;
 	padding: 2.5%;
 	width: 95%;
@@ -158,30 +166,33 @@ nav{
 	margin-right: 2.631%;
 }
 .desktop{
-	background-color:##4F4F4F;
+	background-color:#fe9481;
 }
 .tablet{
-	background-color:##4F4F4F;
+	background-color:#fcda92;
 }
 
 .mobile{
-	background-color:##4F4F4F;
+	background-color:#9c8cb9;
 	margin-right:0px;
 }
 .meio .desktop figure, .meio .tablet figure, .meio .mobile figure{
 	margin: 15px auto 0px auto;
-	width: 100%;
+	width: 69.444%;
 }
 .meio h3{
-	color: #FFFFFF;
+	color: #ffffff;
 	font-size: 1.778em;
 	font-weight: 300;
 	letter-spacing: -0.0625em;
-	margin-bottom: 30px;
+	margin-top: -4px;
 	text-shadow:none;
+	background-color:#ccc;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 .meio p {
-	background-color:#000000;
+	background-color:#ffffff;
 	float:left;
 	height:200px;
 	padding: 1.945%;
@@ -215,9 +226,78 @@ span.botao{
 	width: 33.333%;
 	text-shadow: none;
 }
+.mapa{
+	width:100%;
+	height: 100%;
+}
+.meio-mapa{
+	height: 380px;
+	width:100%;
+	background-color:#0ac3fe;
+}
+.meio-contato{
+	background-color:#0ac3fe;
+	padding: 2.5%;
+	width: 95%;
+}
+.meio-contato h3{
+	color: #ffffff;
+	font-size: 1.778em;
+	font-weight: 600;
+	letter-spacing: -0.0625em;
+	margin-bottom: 10px;
+	margin-top: -15px;
+	text-shadow:none;
+	text-align: center;
+}
+.cor-icone{
+	color: red
+}
+form {
+  margin: 0 auto;
+  width: 95%;
+  padding: 1em;
+  border: 1px solid #000;
+  border-radius: 1em;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+	color: #000;
+	text-shadow:none;
+	display: inline-block;
+	width: 90px;
+	text-align: right;
+	font-weight: 600;
+}
+
+input, textarea {
+  font: 1em "Open Sans", sans-serif;
+  width: 89%;
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+.button {
+  padding-left: 90px; 
+}
+button {
+  margin-left: .5em;
+}
+
 footer{
 	clear: both;
-	height: 50px;
 	padding: 10px 0;
 	width: 100%;
 }
@@ -225,13 +305,50 @@ footer{
 	float: left;
 	margin-left: 2.5%;
 }
-.desenvolvedor{
-	float:right
+.social{
+    float: right;
 }
-.desenvolvedor figure{
-	width:100%;
+.social figure{
+    width: 100%;
+}
+.social img{
+    width: 40px;
 }
 
+.whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: -10px;
+    z-index: 1;
+    padding-top: 5px;
+
+}
+/*
+.whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: -10px;
+    z-index: 1;
+    width: 60px;
+    background-color:  #027e02;
+    padding-top: 5px;
+    border-radius: 50%;
+}*/
+.whatsapp img{
+    padding-left: 10px;
+    width: 60px;
+    z-index: 2;
+}
+.volta-topo{
+    position: relative;
+    bottom: 25px;
+	left:-395px;
+    padding-top: 0px;
+}
+
+.volta-topo img{
+    width: 40px;
+}
 @media screen and (max-width: 999px){
 	h2, a , a:link, a:visited{
 		color: #228b22;
@@ -267,7 +384,7 @@ footer{
 		font-size: 1.111em;
 	}
 	.meio{
-		background-color:#4F4F4F;
+		background-color:#228b22;
 		height:400px;
 		padding: 3.90%;
 		width: 92.18%;
@@ -303,6 +420,12 @@ footer{
 	span.botao a{
 		padding: 2px 3.333%;
 	}
+	.volta-topo{
+    position: relative;
+    bottom: 25px;
+	left:-355px;
+    padding-top: 0px;
+}
 }
 
 @media screen and (max-width: 630px){
@@ -346,7 +469,7 @@ footer{
 		width: 100%;
 	}
 	nav li a:link{
-		color:#1e1c22;
+		color:#ffffff;
 		font-size: 1.388em;
 	}
 	nav li a.ativo:link, nav li a:hover, nav li a:visited{
@@ -370,9 +493,13 @@ footer{
 		font-size: 0.778em;
 	}
 	.meio{
-		background-color: #ffffff;
+		background-color: #8a2be2;
 		margin:0;
 		padding:0;
+		width: 100%;
+	}
+	.meio-contato{
+		padding-top:5%;
 		width: 100%;
 	}
 	.meio .desktop, .meio .tablet, .meio .mobile{
@@ -382,33 +509,62 @@ footer{
 	}
 	.meio .desktop figure, .meio .tablet figure, .meio .mobile figure{
 		float: left;
-		height: 160px;
+		height: 150px;
 		margin:0;
 		padding: 0;
 		width: 53.125%
 	}
 	.meio h3{
-		color: #4F4F4F;
-		float: left;
-		margin-top: 40px;
-		width: 46.875%
+		float: right;
+		width: 26.875%;
+		font-size: 0.878em;
+		margin-left: 0;
+		margin-top: 50px;
 	}
 	.meio .desktop figure img, .meio .tablet figure img, .meio .mobile figure img{
 		height: 125px;
-		margin-top: 15px;
+
 		width: 86.274%;
 	}
 	.meio p{
 		display: none;
 	}
-	.copyleft, .desenvolvedor{
+	.copyleft, .social{
 		float: none;
 		margin: 0;
 		padding: 0;
 		text-align: center;
 	}
-	.desenvolvedor figure{
-		width: inherit;
+	.social figure{
+		padding-top:10px
+	}
+	.volta-topo{
+		display:none;
+	}
+	.whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    z-index: 1;
+    padding-top: 5px;
+
+	}
+	.whatsapp img{
+		padding-left: 10px;
+		width: 60px;
+		z-index: 2;
+	}
+	.mapa{
+		margin-top:10px;
+		height: 300px;
+	}
+	.meio-mapa{
+		margin-top:10px;
+		height: 380px;
+	}
+	form {
+		height: 100%;
+		width: 75%;
 	}
 }
 @media screen and (max-width:319px){
@@ -470,7 +626,30 @@ footer{
 	.meio p{
 		display: none;
 	}
-	.copyleft{
-		font-size: 0.91em;
+	.copyleft, .social{
+		float: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	.social figure{
+		padding-top:10px
+	}
+	.volta-topo{
+		display:none;
+	}
+	.whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: -5px;
+    z-index: 1;
+    padding-top: 5px;
+	}
+	.mapa{
+		height: 300px;
+	}
+	form {
+		height: 100%;
+		width: 75%;
 	}
 }
